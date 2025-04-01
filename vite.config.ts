@@ -7,4 +7,10 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  resolve: {
+    alias: {
+        "@": "/resources",
+        "@img": "/resources/images",
+    },
+},
 });
