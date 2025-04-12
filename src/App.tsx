@@ -17,7 +17,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import Contact from "./components/Contact";
-import logo from "./resources/images/logo.png";
+import logo from "./resources/images/logo_banner.png";
 
 function ScrollToSection({ sectionId }: { sectionId: string }) {
   const location = useLocation();
@@ -208,7 +208,7 @@ function App() {
                 <img
                   src={logo}
                   alt="Wispwagon.com"
-                  width={80}
+                  width={250}
                   height={80}
                 ></img>
               </Link>

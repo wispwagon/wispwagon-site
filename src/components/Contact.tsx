@@ -8,29 +8,39 @@ function Contact() {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-16">Contact Us</h2>
           <div className="max-w-2xl mx-auto">
-            <form className="space-y-6">
+            <form
+              className="space-y-6"
+              action="https://formspree.io/f/mwplyppv"
+              method="POST"
+            >
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                 <input
                   type="text"
+                  name="name"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   placeholder="Your name"
+                  required
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                 <input
                   type="email"
+                  name="email"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   placeholder="your@email.com"
+                  required
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                 <textarea
+                  name="message"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                   rows={4}
                   placeholder="Your message"
+                  required
                 ></textarea>
               </div>
               <button
